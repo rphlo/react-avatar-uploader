@@ -2,7 +2,7 @@
   "name": "react-avatar-uploader",
   "version": "1.0.4",
   "description": "A React Component for uploading avatar to the server",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "types": "src/types.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -34,9 +34,9 @@
   "license": "MIT",
   "private": false,
   "peerDependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "prop-types": "^15.6.2",
     "styled-components": "^3.3.3"
   },
   "devDependencies": {
@@ -57,5 +57,8 @@
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "styled-components": "^5.3.5"
+  }
 }

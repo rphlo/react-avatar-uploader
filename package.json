@@ -2,7 +2,7 @@
   "name": "react-avatar-uploader",
   "version": "1.0.4",
   "description": "A React Component for uploading avatar to the server",
-  "main": "dist/index.js",
+  "main": "src/index.js",
   "types": "src/types.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

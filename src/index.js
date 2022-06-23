@@ -23,11 +23,11 @@ export default class AvatarUploader extends Component {
     }
     async uploadImage(avatar) {
         const {uploadURL, onStart, onProgress, onFinished, name, customHeaders, withCredentials} = this.props;
+        if (onStart && typeof onStart === 'function') {
+            onStart(avatar);
+        }
         if (uploadURL) {
             try {
-                if (onStart && typeof onStart === 'function') {
-                    onStart();
-                }
                 this.setState({loading: true});
                 const avatarForm = new FormData();
 
@@ -86,7 +86,7 @@ export default class AvatarUploader extends Component {
 }
 
 AvatarUploader.propTypes = {
-    uploadURL: PropTypes.string.isRequired,
+    uploadURL: PropTypes.string,
     onFinished: PropTypes.func,
     onStart: PropTypes.func,
     onProgress: PropTypes.func,
